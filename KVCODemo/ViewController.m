@@ -30,6 +30,19 @@
     [self secondKVCKeyPath];
 }
 
+
+/**
+ 다시 실행하기
+ @param sender
+ */
+- (IBAction)rePlay:(id)sender {
+    // 1. Property 의 이해 (기본, KVC)
+    [self firstProperty];
+    
+    // 2. KVC KeyPath에 대한 예제
+    [self secondKVCKeyPath];
+}
+
 /**
  1. 첫번째로 실험하는 기본적인 Property 값과 KVC를 통한 Property 값 실험.
  */

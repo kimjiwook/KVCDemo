@@ -1,24 +1,115 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="6SQ-dT-QcV">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--KVC-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="36I-aa-RI0">
+                                <rect key="frame" x="141" y="350.5" width="93" height="30"/>
+                                <state key="normal" title="Move To KVO"/>
+                                <connections>
+                                    <segue destination="6eo-TV-Zre" kind="push" id="xV7-sf-sHl"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="erp-OU-8m8">
+                                <rect key="frame" x="161.5" y="457" width="52" height="30"/>
+                                <state key="normal" title="다시실행"/>
+                                <connections>
+                                    <action selector="rePlay:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Msu-ml-xam"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="erp-OU-8m8" firstAttribute="top" secondItem="36I-aa-RI0" secondAttribute="bottom" constant="76.5" id="9li-oB-Oac"/>
+                            <constraint firstItem="erp-OU-8m8" firstAttribute="centerX" secondItem="36I-aa-RI0" secondAttribute="centerX" id="Ab6-My-pJS"/>
+                            <constraint firstItem="36I-aa-RI0" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="jcy-tC-zKE"/>
+                            <constraint firstItem="36I-aa-RI0" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="q6L-Lk-xGS"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <navigationItem key="navigationItem" title="KVC" id="qOe-Qv-Jkb"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="1079.2" y="132.68365817091455"/>
+        </scene>
+        <!--KVO-->
+        <scene sceneID="6uA-OO-n2j">
+            <objects>
+                <viewController id="6eo-TV-Zre" customClass="KVOViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="d2o-gf-DZC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kCT-2C-mgs">
+                                <rect key="frame" x="112.5" y="350.5" width="150" height="30"/>
+                                <state key="normal" title="Move To KVO Context"/>
+                                <connections>
+                                    <segue destination="p9U-xh-dM9" kind="push" id="nwZ-8K-csY"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="kCT-2C-mgs" firstAttribute="centerX" secondItem="MfZ-ip-1Ht" secondAttribute="centerX" id="DPU-3p-7kY"/>
+                            <constraint firstItem="kCT-2C-mgs" firstAttribute="centerY" secondItem="MfZ-ip-1Ht" secondAttribute="centerY" id="WwG-dB-t3X"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="MfZ-ip-1Ht"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="KVO" id="KRv-xm-LXS"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pym-xK-ggO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1908" y="132.68365817091455"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="1yH-Xl-xed">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="6SQ-dT-QcV" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="MZt-wp-Be7">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="407-F8-jlv"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0KN-lj-IJC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="146" y="133"/>
+        </scene>
+        <!--KVO Context-->
+        <scene sceneID="5YE-xT-kPp">
+            <objects>
+                <viewController id="p9U-xh-dM9" customClass="KVOContextViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="F0g-zr-O7s">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="KQ5-Xq-Ll2"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="KVO Context" id="JHe-QF-7XN"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hwF-ci-nfU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1626" y="813"/>
         </scene>
     </scenes>
 </document>

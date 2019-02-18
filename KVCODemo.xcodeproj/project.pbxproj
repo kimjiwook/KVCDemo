@@ -15,6 +15,8 @@
 		A39D7A2F21E1C71900959669 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A39D7A2E21E1C71900959669 /* main.m */; };
 		A39D7A3921E1C71900959669 /* KVCODemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A39D7A3821E1C71900959669 /* KVCODemoTests.m */; };
 		A39D7A4421E1C71900959669 /* KVCODemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = A39D7A4321E1C71900959669 /* KVCODemoUITests.m */; };
+		A3DA1B08221A86EA006F1F6A /* KVOViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A3DA1B06221A86EA006F1F6A /* KVOViewController.m */; };
+		A3DA1B0D221A9549006F1F6A /* KVOContextViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A3DA1B0C221A9549006F1F6A /* KVOContextViewController.m */; };
 		A3FD36B021F1A39300C0FFB6 /* KVCObject.m in Sources */ = {isa = PBXBuildFile; fileRef = A3FD36AF21F1A39300C0FFB6 /* KVCObject.m */; };
 /* End PBXBuildFile section */
 
@@ -52,6 +54,10 @@
 		A39D7A3F21E1C71900959669 /* KVCODemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KVCODemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A39D7A4321E1C71900959669 /* KVCODemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KVCODemoUITests.m; sourceTree = "<group>"; };
 		A39D7A4521E1C71900959669 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A3DA1B05221A86EA006F1F6A /* KVOViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KVOViewController.h; sourceTree = "<group>"; };
+		A3DA1B06221A86EA006F1F6A /* KVOViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KVOViewController.m; sourceTree = "<group>"; };
+		A3DA1B0B221A9549006F1F6A /* KVOContextViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KVOContextViewController.h; sourceTree = "<group>"; };
+		A3DA1B0C221A9549006F1F6A /* KVOContextViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KVOContextViewController.m; sourceTree = "<group>"; };
 		A3FD36AE21F1A39300C0FFB6 /* KVCObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KVCObject.h; sourceTree = "<group>"; };
 		A3FD36AF21F1A39300C0FFB6 /* KVCObject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KVCObject.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -110,6 +116,10 @@
 				A39D7A2221E1C71700959669 /* ViewController.h */,
 				A39D7A2321E1C71700959669 /* ViewController.m */,
 				A39D7A2521E1C71700959669 /* Main.storyboard */,
+				A3DA1B05221A86EA006F1F6A /* KVOViewController.h */,
+				A3DA1B06221A86EA006F1F6A /* KVOViewController.m */,
+				A3DA1B0B221A9549006F1F6A /* KVOContextViewController.h */,
+				A3DA1B0C221A9549006F1F6A /* KVOContextViewController.m */,
 				A39D7A2821E1C71900959669 /* Assets.xcassets */,
 				A39D7A2A21E1C71900959669 /* LaunchScreen.storyboard */,
 				A39D7A2D21E1C71900959669 /* Info.plist */,
@@ -276,9 +286,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				A39D7A2421E1C71700959669 /* ViewController.m in Sources */,
+				A3DA1B0D221A9549006F1F6A /* KVOContextViewController.m in Sources */,
 				A39D7A2F21E1C71900959669 /* main.m in Sources */,
 				A3FD36B021F1A39300C0FFB6 /* KVCObject.m in Sources */,
 				A39D7A2121E1C71700959669 /* AppDelegate.m in Sources */,
+				A3DA1B08221A86EA006F1F6A /* KVOViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
